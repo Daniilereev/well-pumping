@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-family: 'Roboto';
+}
+p{
+  line-height: 1.5;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #B0FFFF; /* нежноголубой*/
+}
+/* ЧТОБЫ ФУТЕР БЫЛ ВНИЗУ */
+html, body {
+  height: 100%;
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+    background-image: url("../img/fon2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main {
+  flex-grow: 1;
+}
+                /* ШАПКА */
+.header{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 0;
+  background-color: #293740; /*темный цвет*/
+}
+.header a{
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.header a:hover{
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.header p{
+  text-align: center;
+  color: #F5F5F5; /*белый текст */
+}
+.block__menu {
+  width: 150px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block__menu:hover{
+  background-color: #52585E; /*цвет при наведении */
+}
+.dropdown__menu {
+  display: none;
+}
+.block__menu__dropdown:hover .dropdown__menu {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+  color: #F5F5F5;
+  background-color: #52585E;
+  top: 55px;
+  padding: 5px;
+  text-align: center;
+}
+
+.block__menu__dropdown li {
+  margin: 10px 0;
+}
+            /* ПОДВАЛ */
+.container__bottom{
+  margin-top: 50px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.bottom {
+  width: 100%;
+  padding: 0;
+  height: 80px;
+  background-color: #293740;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bottom__content{
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.bottom p, .bottom a{
+  color: #F5F5F5;
+  font-size: 14px;
+}
+
+
+            /* ГЛАВНАЯ  */
+.title__one, .title__two {
+  text-align: center;
+  color: #212121;  /*Цвет темного текста заголовков*/
+}
+.title__two{
+  font-weight: 600;
+}
+h1,h2 {
+  color: #212121;
+}
+.container__two {
+  display: flex;
+  max-width: 700px;
+  margin:auto;
+  text-align: justify;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container__two p{
+  /* display: inline-block; */
+  vertical-align: top;
+}
+.picture img{
+  width: 100px;
+  height: 100px;
+  margin: 0 20px 0 20px;
+}
+/* РАСЧЕТ ПОНИЖЕНИЯ*/
+.container__calc {
+  display: flex;
+  max-width: 400px;
+  margin:auto;
+  text-align: justify;
+  flex-direction: column;
+}
+button {
+  display: inline-flex;
+  padding: 3px 8px;
+  margin: 7px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-bottom-width: 1px;
+  font-size: 15px;
+}
+button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #B0FFFF; /*нежноголубой*/
+}
+.whitebutton{
+  color: black;
+  background-color: white;
+}
+.whitebutton:hover{
+  background-color: #B0FFFF;
+}
+.blackbutton{
+  background-color: #293740;
+  color: #F5F5F5;
+}
+.blackbutton:hover{
+    background-color: #B0FFFF;
+    color: black;
+}
+.divcenter {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.divleft {
+
+  padding: 5px 0;
+
+}
+.in {
+  width: 70px;
+  margin: 3px;
+  padding: 2px;
+}
+#checkingsamewell {
+  margin: 10px;
+  width: 20px;
+}
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ background-color: #CCCCCC;   /*светло серый */
+  padding: 5px 20px;
+  color: ;
+  border-radius: 8px;
+  max-width: 220px;
+  margin-bottom: 15px;
+  /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); */
+}
+/*Таблица соседних скважин*/
+table {
+  margin: 10px;
+  text-align: center;
+  background-color: ;
+}
+td{
+  text-align: center;
+  min-width: 20px;
+  padding: 3px;
+}
+.tablehead{
+  text-align: center;
+  width: 73px;
+}
+.intable{
+  max-width: 60px;
+}
+.tablerow{
+  display: none; /*должно быть none*/
+  text-align: center;
+}
+input{
+  padding: 5px;
+}
+#samewellblock{
+  display: none;
+}
+#reporterror {
+  color: #9C0000;  /*ТЕМНО-КРАСНЫЙ ЦВЕТ ОШИБКИ*/
+}
+/* ДЕЛАЕМ ПОДСКАЗОЧНИК */
+
+/* .questionwrapper {
+  max-width: 400px;
+  max-height: 80%;
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  background-color: red;
+} */
+.questionclick{
+  display: flex;
+  position: fixed;
+  right: 50px;
+  top: 80px;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #CCCCCC;
+  font-size: 35px;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.questionclick:hover {
+  background-color: #B0FFFF;
+}
+
+.questionanswer{
+  display: none;
+  position: fixed;
+  max-width: 300px;
+  max-height: 400px;
+  right: 25px;
+  top: 140px;
+  background-color: #CCCCCC;
+  padding: 15px;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.answercontent{
+  text-align: left;
+  margin: 10px;
+}
+.questionanswer a{
+  margin: auto;
+  margin-top: 10px;
+  color: #492D6E;          /*ЦВЕТ ССЫЛКИ*/
+}
+.questionanswer a:hover{
+  color: #B0FFFF;}
+/* ДЛЯ АВТОРИЗАЦИИ */
+.container__login{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  background-color: #293740;
+  max-height: 350px;
+  text-decoration-color: white;
+  border-radius: 20px;
+  padding: 15px 0;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, .6);
+}
+.container__login > .title__two,  .container__feedback > .title__two{
+  color: #F5F5F5;
+}
+.container__login a,  .container__feedback a{
+  text-decoration: none;
+  color: #F5F5F5;
+  margin: 3px;
+}
+.container__login a:hover,  .container__feedback a:hover{
+  color: #B0FFFF;
+}
+.logininput {
+  margin: 3px;
+  padding: 4px;
+}
+.errmsg{
+  height: 20px;
+  color: #FF8A8C;  /*СВЕТЛО-КРАСНЫЙ ЦВЕТ ОШИБКИ */
+}
+.nicemsg{
+  height: 20px;
+  color: #B0FFFF;
+}
+.container__login p, .container__feedback p{
+  color: #F5F5F5;
+  margin: 15px;
+  text-align: center;
+}
+                       /*СТРАНИЦА ОБРАТНОЙ СВЯЗИ */
+.container__feedback {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  background-color: #293740;
+  max-height: 400px;
+  text-decoration-color: white;
+  border-radius: 20px;
+  padding: 15px 0;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, .6);
+}
+.letter {
+  width: 80%;
+  resize: vertical;
+  max-height: 400px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.fuckinglink {
+  display: none;
+}
+@media (max-width: 750px) {
+  .container__two{
+    margin: auto 30px;
+  }
+  .header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: auto;
+  }
+  .block__menu__dropdown:hover .dropdown__menu {
+    display: flex;
+  }
+  .fuckinglink {
+    display: flex;
+  }
+  .questionclick {
+    display: none;
+  }
+  .border__header {
+    /* border-bottom: solid;
+    border-color: white; */
+  }
+
+}
+@media (max-width: 500px) {
+  .header{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: auto;
+    }
+    .container__two{
+      flex-direction: column;
+    }
+    .divleft .container__two{
+      flex-direction: row;
+    }
+    .container__two p {
+      order: 1;
+    }
+    .container__two .picture {
+      order: 2;
+      margin-top: 20px;
+    }
+    .picture img{
+    width: 150px;
+    height: auto;
+    }
+    .divleft {
+      margin-left: 10px;
+    }
+    .title__two {
+      margin: auto 7px;
+    }
+    .fuckinglink {
+      display: flex;
+    }
+    .border__header {
+    /* FONT-VARIANT: JIS78; */
+    height: 50px;
+    width: calc(47vw);
+    border-top: solid;
+    border-color: #F5F5F5;
+    }
+    .in {
+      width: 50px;
+    }
+    .blackbutton:hover {
+      background-color: #293740;
+      color: #F5F5F5;
+    }
+    .blackbutton:active {
+      background-color: #B0FFFF;
+    }
+    .bottom {
+      flex-direction: column;
+      height: 120px;
+    }
+    .bottom__content{
+      width: 100%;
+      margin: 6px 0;
+    }
+}
+
+    /*для обратной связи*/
+@media (max-width: 650px) {
+  .container__feedback {
+    width: 95%;
+  }
+  .letter{
+    width: 90%;
+  }
+  }
